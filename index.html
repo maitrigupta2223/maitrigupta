@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maitri Gupta | Cybersecurity Student & Researcher</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Background Animation -->
+    <div class="bg-animation" id="bgAnimation"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="logo">MG</a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-buttons">
+            <a href="resume.pdf" class="resume-btn" id="resumeBtn" download>
+                <i class="fas fa-file-download"></i> Download Resume
+            </a>
+            <button class="mode-toggle" id="modeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="profile-container">
+            <div class="cyber-circle"></div>
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFt17RY65zh4A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726484472448?e=1747872000&v=beta&t=GIZEae2hoFR4z29WvBFkNRyqn20U9g5tNIUi0vlhy0o" alt="Maitri Gupta" class="profile-img">
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Maitri Gupta</h1>
+            <h2 class="hero-subtitle">Cybersecurity Student & Researcher</h2>
+            <p class="hero-description">
+                As an undergraduate IT student specializing in cybersecurity, I have dedicated the past year to actively exploring and mastering the field. 
+                With hands-on experience as a cybersecurity researcher and bug bounty hunter, I have developed a keen ability to identify, analyze, and mitigate 
+                security vulnerabilities and threats. My passion for ethical hacking and cybersecurity drives me to continuously enhance my skills and stay 
+                ahead of emerging threats in the digital landscape.
+            </p>
+            <a href="#contact" class="cta-btn">Get In Touch <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Educational Background Section -->
+    <section id="education">
+        <h2 class="section-title">Educational Background</h2>
+        
+        <div class="education-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="higher">Higher Education</button>
+            <button class="filter-btn" data-filter="school">School</button>
+        </div>
+        
+        <div class="education-container">
+            <!-- Amity University -->
+            <div class="education-card" data-category="higher">
+                <div class="education-header">
+                    <div class="institution-logo">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3 class="institution-name">Amity University</h3>
+                        <h4 class="degree">Master of Science (MS) in Cybersecurity</h4>
+                        <span class="education-period">Sep 2024 – Jun 2026</span>
+                    </div>
+                </div>
+                <div class="education-details">
+                    <div class="education-status">
+                        <span class="status-badge ongoing">Ongoing</span>
+                    </div>
+                    <ul class="education-highlights">
+                        <li><i class="fas fa-shield-alt"></i> Specializing in Network Security</li>
+                        <li><i class="fas fa-laptop-code"></i> Advanced Penetration Testing</li>
+                        <li><i class="fas fa-file-code"></i> Security Research & Development</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Gujarat University -->
+            <div class="education-card" data-category="higher">
+                <div class="education-header">
+                    <div class="institution-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3 class="institution-name">Gujarat University</h3>
+                        <h4 class="degree">BSc in IT IMS & Cyber Security</h4>
+                        <span class="education-period">Jun 2021 – Jun 2024</span>
+                    </div>
+                </div>
+                <div class="education-details">
+                    <div class="education-status">
+                        <span class="status-badge completed">Completed</span>
+                        <span class="grade">Grade: 6.22</span>
+                    </div>
+                    <ul class="education-highlights">
+                        <li><i class="fab fa-linux"></i> Red Hat Linux</li>
+                        <li><i class="fas fa-network-wired"></i> Network Security</li>
+                        <li><i class="fas fa-database"></i> Database Management</li>
+                    </ul>
+                    <div class="skills-used">
+                        <span class="skill-tag">Red Hat Linux</span>
+                        <span class="skill-tag">Cybersecurity</span>
+                        <span class="skill-tag">IT Management</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Institute of Open Schooling -->
+            <div class="education-card" data-category="school">
+                <div class="education-header">
+                    <div class="institution-logo">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3 class="institution-name">National Institute of Open Schooling (NIOS)</h3>
+                        <h4 class="degree">Commerce, 12th</h4>
+                        <span class="education-period">Jun 2021</span>
+                    </div>
+                </div>
+                <div class="education-details">
+                    <div class="education-status">
+                        <span class="status-badge completed">Completed</span>
+                        <span class="grade">Grade: 70%</span>
+                    </div>
+                    <ul class="education-highlights">
+                        <li><i class="fas fa-chart-line"></i> Business Studies</li>
+                        <li><i class="fas fa-calculator"></i> Accountancy</li>
+                        <li><i class="fas fa-coins"></i> Economics</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Delhi Public School -->
+            <div class="education-card" data-category="school">
+                <div class="education-header">
+                    <div class="institution-logo">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3 class="institution-name">Delhi Public School – Bopal, Ahmedabad</h3>
+                        <h4 class="degree">10th Grade</h4>
+                        <span class="education-period">Mar 2019</span>
+                    </div>
+                </div>
+                <div class="education-details">
+                    <div class="education-status">
+                        <span class="status-badge completed">Completed</span>
+                        <span class="grade">Grade: 69%</span>
+                    </div>
+                    <ul class="education-highlights">
+                        <li><i class="fas fa-microscope"></i> Science</li>
+                        <li><i class="fas fa-language"></i> Languages</li>
+                        <li><i class="fas fa-square-root-alt"></i> Mathematics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <h3 class="skill-title">Python</h3>
+                <p class="skill-description">
+                    Proficient in Python programming for security automation, penetration testing, and data analysis.
+                </p>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" data-progress="85"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="skill-title">VAPT</h3>
+                <p class="skill-description">
+                    Vulnerability Assessment & Penetration Testing for identifying security vulnerabilities in web applications and network systems.
+                </p>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" data-progress="80"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-linux"></i>
+                </div>
+                <h3 class="skill-title">Linux</h3>
+                <p class="skill-description">
+                    Linux security and administration, including system hardening, access control, and secure configuration management.
+                </p>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" data-progress="75"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3 class="skill-title">Networking</h3>
+                <p class="skill-description">
+                    Understanding of network protocols, firewall configurations, and network security fundamentals.
+                </p>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" data-progress="80"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3 class="skill-title">Cryptography</h3>
+                <p class="skill-description">
+                    Knowledge of encryption algorithms, key management, and cryptographic protocols.
+                </p>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" data-progress="70"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3 class="skill-title">Communication</h3>
+                <p class="skill-description">
+                    Excellent written and verbal communication skills for technical documentation and presentations.
+                </p>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" data-progress="90"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="experience-container">
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="company-logo">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="experience-title-container">
+                        <h3 class="experience-title">Security Analyst</h3>
+                        <h4 class="company-name">TechDefenders Consulting Pvt. Ltd.</h4>
+                        <span class="experience-period">Jan 2024 - Present</span>
+                    </div>
+                </div>
+                <div class="experience-content">
+                    <p class="experience-description">
+                        Working as a security analyst focused on performing vulnerability assessments and penetration testing for client applications. 
+                        Responsible for identifying security vulnerabilities, documenting findings, and providing remediation recommendations.
+                    </p>
+                    <ul class="responsibilities-list">
+                        <li><i class="fas fa-check-circle"></i> Perform vulnerability assessments and penetration testing on web applications</li>
+                        <li><i class="fas fa-check-circle"></i> Analyze security logs and identify potential threats</li>
+                        <li><i class="fas fa-check-circle"></i> Create detailed security reports with remediation recommendations</li>
+                        <li><i class="fas fa-check-circle"></i> Collaborate with development teams to implement security best practices</li>
+                    </ul>
+                    <div class="skills-used">
+                        <span class="skill-tag">VAPT</span>
+                        <span class="skill-tag">Web Security</span>
+                        <span class="skill-tag">Network Security</span>
+                        <span class="skill-tag">Risk Assessment</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="company-logo">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="experience-title-container">
+                        <h3 class="experience-title">Participant</h3>
+                        <h4 class="company-name">Smart India Hackathon 2024</h4>
+                        <span class="experience-period">Feb 2024 - Mar 2024</span>
+                    </div>
+                </div>
+                <div class="experience-content">
+                    <p class="experience-description">
+                        Represented VTU VRIF at the Smart India Hackathon 2024, working on developing innovative cybersecurity solutions 
+                        to address real-world challenges. Collaborated with a team of peers to design and implement secure applications.
+                    </p>
+                    <ul class="responsibilities-list">
+                        <li><i class="fas fa-check-circle"></i> Developed a secure application focusing on data privacy and protection</li>
+                        <li><i class="fas fa-check-circle"></i> Implemented secure coding practices and performed threat modeling</li>
+                        <li><i class="fas fa-check-circle"></i> Presented solutions to industry experts and judges</li>
+                        <li><i class="fas fa-check-circle"></i> Collaborated with cross-functional team members to deliver results</li>
+                    </ul>
+                    <div class="skills-used">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Secure Coding</span>
+                        <span class="skill-tag">API Security</span>
+                        <span class="skill-tag">Teamwork</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <strong>Email</strong>
+                        <a href="mailto:maitri@techdefenders.in" class="contact-link">maitri@techdefenders.in</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-text">
+                        <strong>Phone</strong>
+                        <a href="tel:+919723401337" class="contact-link">+91 9723401337</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <strong>Location</strong>
+                        <span>Bangalore, India</span>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" class="form-control" placeholder="Enter subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Maitri Gupta</div>
+            <p class="footer-text">Cybersecurity Student & Researcher passionate about creating a secure digital world.</p>
+            <div class="footer-links">
+                <a href="#home" class="footer-link">Home</a>
+                <a href="#education" class="footer-link">Education</a>
+                <a href="#skills" class="footer-link">Skills</a>
+                <a href="#experience" class="footer-link">Experience</a>
+                <a href="#contact" class="footer-link">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="footer-social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 Maitri Gupta. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification for Download Success -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i> Resume downloaded successfully!
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
